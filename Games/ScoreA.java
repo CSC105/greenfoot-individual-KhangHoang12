@@ -16,10 +16,10 @@ public class ScoreA extends Actor
     public void act() 
     {
         // Add your action code here
-        setLocation(100, 100);
+
         int scoreA = 0;
         Flamingo fla = new Flamingo();
-        setImage(new GreenfootImage("Score of A : " + fla.sideA, 24, Color.GREEN, Color.BLACK));
+        setImage(new GreenfootImage("Score of A : " + fla.sideA, 24, Color.PINK, Color.BLACK));
         
         
         

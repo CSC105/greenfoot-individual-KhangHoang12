@@ -19,7 +19,7 @@ public class ScoreB extends Actor
         setLocation(1100, 100);
         int scoreB = 0; 
         Flamingo fla = new Flamingo();
-        setImage(new GreenfootImage("Score of B : " + fla.sideB, 24, Color.GREEN, Color.BLACK));
+        setImage(new GreenfootImage("Score of B : " + fla.sideB, 24, Color.PINK, Color.BLACK));
         
         
         

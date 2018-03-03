@@ -13,15 +13,36 @@ public class StartButton extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public static int startStatus = 0;
+    public static int movePoint = 0;
     public void act() 
     {
         // Add your action code here.
-        setLocation(500 , 500);
+        
+        setLocation(600, 100);
+        
         
         if (Greenfoot.mouseClicked(this)) {//true if you clicked at this object;
            startStatus = 1;  //changes the image of the button so that you see if it's clicked;
+           
             //also add the methods you want to execute;
-        }
+        } 
+        
+        movePoint = startStatus * 7;
+        
+        
+        
 
     }    
+    
+    public int getStatus(){
+        return startStatus;
+    }
+    
+    public int getMovePoint(){
+        return movePoint;
+    }
+    
+    public void setStatus(){
+        startStatus = 0;
+    }
 }

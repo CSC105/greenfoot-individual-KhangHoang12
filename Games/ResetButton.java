@@ -15,5 +15,11 @@ public class ResetButton extends Actor
     public void act() 
     {
         // Add your action code here.
+        setImage(new GreenfootImage("GAME RESET " , 24, Color.PINK, Color.BLACK));
+
+        Flamingo fla = new Flamingo();
+        if (Greenfoot.mouseClicked(this)){
+            fla.reset();
+        }
     }    
 }
